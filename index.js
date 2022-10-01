@@ -16,9 +16,13 @@ app.get("/home",(req,res) => {
 app.get("/home/:title", (req,res) => {
     const { title } = req.params;
     console.log(title);
-    const department = arr.find((c) => c.title === title);
-    console.log(department);
-    res.render("depdetails",{department});
+    if(title){
+        const department = arr.find((c) => c.title === title);
+        console.log(department);
+        res.render("depdetails",{department});
+    }else{
+        res.redirect('/home');
+    }
 })
 app.listen(8080, ()=>{
     console.log("Listening on port 8080!!!");

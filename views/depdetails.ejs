@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%=department.title%></title>
     <link rel="icon" type="image/x-icon" href="/image/logo.png" />
 
@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link rel="stylesheet" href="/css/vertislide.css" />
     <style>
       img.myimg {
         width: 286px;
@@ -89,22 +89,40 @@
         font-size: 1.5rem;
       }
     </style>
-</head>
-<!-- You can access to department dictionary -->
-<body>
-
+  </head>
+  <!-- You can access to department dictionary -->
+  <body>
     <%-include('asset/header')%>
 
-    <%-include('asset/footer')%>
-    
+  <div id="scene">
+    <div id="left-zone">
+      <ul class="list">
+        <%let array=["strawberry","banana","apple","orange"]%> 
+        <%for(let i=0;i<department.events.length;i++){%> 
+        <li class="item">
+          <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>" checked="checked"/>
+          <label class="label_<%array[i]%>" for="radio_<%=department.events[i].description%>"><%=department.events[i].title%></label>
+          <div class="content content_<%array[i]%>"><span class="picto"></span>
+            <h1><%=department.events[i].title %> </h1>
+            <p><%=department.events[i].description%></p>
+          </div>
+        </li>
+        <%}%>
+      </ul>
+    </div>
+    <div id="middle-border"></div>
+    <div id="right-zone"></div>
+  </div>
 
-     <script
+    <%-include('asset/footer')%>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
 
-</body>
+  </body>
 </html>
 
 <script>
