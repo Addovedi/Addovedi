@@ -99,9 +99,10 @@
       <ul class="list">
         <%let array=["strawberry","banana","apple","orange"]%> 
         <%for(let i=0;i<department.events.length;i++){%> 
-        <li class="item">
-          <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>" checked="checked"/>
-          <label class="label_<%array[i]%>" for="radio_<%=department.events[i].description%>"><%=department.events[i].title%></label>
+        <li class="item"> 
+             <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>"/> 
+            <% if(i === 1) %> <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>" checked="checked"/> <%;%>
+             <label class="label_<%array[i]%>" for="radio_<%=department.events[i].description%>"><%=department.events[i].title%></label>
           <div class="content content_<%array[i]%>"><span class="picto"></span>
             <h1><%=department.events[i].title %> </h1>
             <p><%=department.events[i].description%></p>

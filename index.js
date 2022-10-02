@@ -13,12 +13,13 @@ app.set("view engine", "ejs");
 app.get("/home",(req,res) => {
     res.render("home",{arr});
 })
+
 app.get("/home/:title", (req,res) => {
     const { title } = req.params;
     console.log(title);
     if(title){
         const department = arr.find((c) => c.title === title);
-        console.log(department);
+        // console.log(department);
         res.render("depdetails",{department});
     }else{
         res.redirect('/home');

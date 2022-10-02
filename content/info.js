@@ -3,7 +3,7 @@ let cards = [
     id: 1,
     image: "cseimage2.jpg",
     title: "Computer Science and Engineering",
-    description: "decription of computer science events",
+    description: "Computex, Prototype, CSS Battle, Fast typing competition",
     events: [
       {
         title: "computex",
@@ -11,16 +11,16 @@ let cards = [
           "Computex is the coding competition of Addovedi where you solve coding/programming questions on ypur logical and mathematical insights.",
       },
       {
-        title: "prototype",
+        title: "Prototype",
         description:
           "Share your innovative ideas and miniature models on futuristic tech like quantum computing, metaverse-Are we living in simulation?, Human-Computer interaction and information-the basic unit of universe",
       },
       {
-        title: "css battle",
+        title: "CSS battle",
         description: "Competition to make best front end web-design ",
       },
       {
-        title: "fast typing competition",
+        title: "Fast typing competition",
         description: "The fatser you type, the closer you are to win.",
       },
     ],
@@ -29,7 +29,7 @@ let cards = [
     id: 2,
     image: "ece image.jpg",
     title: "Electronics and Communication Engineering",
-    description: "description of ece events ",
+    description: "Circuit-Debugging competition, Car-Racing, Arduino Hackathon, Start up idea pitching",
     events: [
       {
         title: "Circuit-Debugging competition",
@@ -57,7 +57,7 @@ let cards = [
     id: 3,
     image: "ee image.jpg",
     title: "Electrical Engineering",
-    description: "description of ee events",
+    description: "Tech Talks, Circuit-Debugging competition, Electrical Brainy bunch, EV Exhibition",
     events: [
       {
         title: "Tech talk ",
@@ -85,7 +85,7 @@ let cards = [
     id: 4,
     image: "me image.jpg",
     title: "Mechanical Engineering",
-    description: "description of me events",
+    description: "Hydraulic Arm, Assembly Disassembly, Quiz, Exhibition",
     events: [
       {
         title: "Hydraulic Arm ",
@@ -112,7 +112,7 @@ let cards = [
     id: 5,
     image: "ceimg.jpg",
     title: "Civil Engineering",
-    description: "description of ce events ",
+    description: "Bridge Construction Competition, Concrete Block Test, Skyscraper, Hydraulic, Highway Constuction Models",
     events: [
       {
         title: "Bridge construction competition",
@@ -142,7 +142,7 @@ let cards = [
     id: 6,
     image: "common.jpg",
     title: "Common Events",
-    description: "description of other events ",
+    description: "Treasure Hunt, Robowar, Gaming Competition",
     events: [
       {
         title: "Treasure hunt",
