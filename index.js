@@ -16,7 +16,7 @@ app.get("/home",(req,res) => {
 
 app.get("/home/:title", (req,res) => {
     const { title } = req.params;
-    console.log(title);
+    // console.log(title);
     if(title){
         const department = arr.find((c) => c.title === title);
         // console.log(department);
