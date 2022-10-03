@@ -24,11 +24,11 @@
     <link rel="stylesheet" href="/css/vertislide.css" />
     <style>
       img.myimg {
-        width: 286px;
-        height: 300px;
+        width: 17.875rem;
+        height: 18.75rem;
       }
       .webgra {
-        box-shadow: 0 0 30px white;
+        box-shadow: 0 0 1.875rem white;
         background-image: linear-gradient(
           to right,
           #3ab5b0 0%,
@@ -47,9 +47,9 @@
       }
       .flip-card {
         background-color: transparent;
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
+        width: 18.75rem;
+        height: 18.75rem;
+        perspective: 62.5rem;
       }
 
       .flip-card-inner {
@@ -59,7 +59,7 @@
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
       }
 
       .flip-card:hover .flip-card-inner {
@@ -91,14 +91,18 @@
     </style>
   </head>
   <!-- You can access to department dictionary -->
-  <body>
-    <%-include('asset/header')%>
+  <body style="background-image: url(/image/<%=department.imagebg%>);background-size:cover;background-repeat:no-repeat;background-position: center center;">
+  <%-include('asset/header')%>
 
+  
   <div id="scene">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12">
     <div id="left-zone">
       <ul class="list">
         <%let array=["strawberry","banana","apple","orange"]%> 
-        <%for(let i=0;i<department.events.length;i++){%> 
+        <%for(let i=0;i<1;i++){%> 
         <li class="item"> 
              <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>"/> 
             <% if(i === 1) %> <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>" checked="checked"/> <%;%>
@@ -109,11 +113,28 @@
           </div>
         </li>
         <%}%>
+        <%for(let i=1;i<department.events.length;i++){%> 
+        <li class="item"> 
+             <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>"/> 
+            <% if(i === 1) %> <input type="radio" id="radio_<%=department.events[i].description%>" name="basic_carousel" value="<%=department.events[i].description%>" /> <%;%>
+             <label class="label_<%array[i]%>" onclick="javascript:func()" for="radio_<%=department.events[i].description%>"><%=department.events[i].title%></label>
+          <div class="content content_<%array[i]%>" id="<%=i%>" hidden><span class="picto"></span>
+            <h1><%=department.events[i].title %> </h1>
+            <p><%=department.events[i].description%></p>
+          </div>
+        </li>
+        <%}%>
       </ul>
     </div>
+  </div>
+
     <div id="middle-border"></div>
+    <div class="col-md-12 col-sm-12">
     <div id="right-zone"></div>
   </div>
+  </div>
+</div>
+</div>
 
     <%-include('asset/footer')%>
 
@@ -122,7 +143,19 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-
+  <script>
+  import { cards } from "/content/info.js";
+  let arr = cards.cards;
+  console.log(arr);
+  function func(){
+    for(let j=0;j<arr.length;j++){
+    for(let i=1;i<arr.events[j].length;i++){
+      let element=document.getElementById(i);
+      element.hidden=none;
+    }
+    }
+  }
+  </script>
   </body>
 </html>
 

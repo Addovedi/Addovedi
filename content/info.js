@@ -2,6 +2,7 @@ let cards = [
   {
     id: 1,
     image: "cseimage2.jpg",
+    imagebg: "csebg.jpg",
     title: "Computer Science and Engineering",
     description: "Computex, Prototype, CSS Battle, Fast typing competition",
     events: [
@@ -28,6 +29,7 @@ let cards = [
   {
     id: 2,
     image: "ece image.jpg",
+    imagebg: "ecebg.jpg",
     title: "Electronics and Communication Engineering",
     description: "Circuit-Debugging competition, Car-Racing, Arduino Hackathon, Start up idea pitching",
     events: [
@@ -56,6 +58,7 @@ let cards = [
   {
     id: 3,
     image: "ee image.jpg",
+    imagebg :"eebg.jpg",
     title: "Electrical Engineering",
     description: "Tech Talks, Circuit-Debugging competition, Electrical Brainy bunch, EV Exhibition",
     events: [
@@ -84,6 +87,7 @@ let cards = [
   {
     id: 4,
     image: "me image.jpg",
+    imagebg: "mebg.jpg",
     title: "Mechanical Engineering",
     description: "Hydraulic Arm, Assembly Disassembly, Quiz, Exhibition",
     events: [
@@ -111,6 +115,7 @@ let cards = [
   {
     id: 5,
     image: "ceimg.jpg",
+    imagebg:"cebg.jpg",
     title: "Civil Engineering",
     description: "Bridge Construction Competition, Concrete Block Test, Skyscraper, Hydraulic, Highway Constuction Models",
     events: [
@@ -141,6 +146,7 @@ let cards = [
   {
     id: 6,
     image: "common.jpg",
+    imagebg: "gamebg.jpg",
     title: "Common Events",
     description: "Treasure Hunt, Robowar, Gaming Competition",
     events: [
