@@ -14,6 +14,8 @@
           href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Noto Sans Mono">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=  ">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -116,24 +118,24 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="image/robo.jpeg" class="d-block " alt="..." style="width:40rem;height:30rem">
+      <img src="image/robo.jpg" class="d-block " alt="..." style="width:40rem;height:30rem">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Robowar</h5>
-        <p>Use your robot to destroy other's robot</p>
+        <h5 style="font-size:2rem ;font-family: Gemunu Libre;">Robowar</h5>
+        <p style="font-size:1.25rem ;font-family: Gemunu Libre;">Use your robot to destroy other's robot</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image/treasure.jpeg" class="d-block " alt="..." style="width:40rem;height:30rem">
+      <img src="image/treasure.jpg" class="d-block " alt="..." style="width:40rem;height:30rem">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Treasure Hunt</h5>
-        <p>Find the ONE PIECE</p>
+        <h5 style="font-size:2rem ;font-family: Gemunu Libre;">Treasure Hunt</h5>
+        <p style="font-size:1.25rem ;font-family: Gemunu Libre;">Find the ONE PIECE</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="image/game.jpeg" class="d-block " alt="..." style="width:40rem;height:30rem">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Games</h5>
-        <p>Use Your Laptop to destroy other's will power</p>
+        <h5 style="font-size:2rem ;font-family: Gemunu Libre;">Games</h5>
+        <p style="font-size:1.25rem ;font-family: Gemunu Libre;">Use Your Laptop to destroy other's will power</p>
       </div>
     </div>
   </div>
@@ -151,7 +153,7 @@
         <div class="row justify-content-sm-evenly">
           <%arr.forEach(card =>{ %>
           <div class=" col-lg-4 col-md-6 text-center" style="display: flex">
-            <a href="home/<%= card.title %>">
+            <a href="home/<%= card.title %>" style="text-decoration: none;">
               <div
                 class="card webgra"
                 style="width: 18rem; margin: 2rem 2rem 0 2rem"
@@ -166,12 +168,16 @@
                       />
                     </div>
                     <div class="flip-card-back backwebgra">
-                      <p><%=card.description%></p>
+                      <br>
+                      <br>
+                      <%card.description.forEach(card=>{%>
+                      <p style="font-family: Gemunu Libre;"><%=card%></p>
+                      <%})%>
                     </div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <p class="card-text"><%=card.title%></p>
+                  <p class="card-text" style="color: white;"><%=card.title%></p>
                 </div>
               </div>
             </a>
