@@ -11,20 +11,29 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/home",(req,res) => {
-    res.render("home",{arr});
+    const title = "home";
+    res.render("home",{arr,title});
 })
 
 app.get("/home/:title", (req,res) => {
     const { title } = req.params;
     // console.log(title);
-    if(title){
-        const department = arr.find((c) => c.title === title);
+    const department = arr.find((c) => c.title === title);
+    if(department){
         // console.log(department);
-        res.render("depdetails",{department});
+        res.render("depdetails",{department,title});
+        // var temp = depdetails.render({ clickHandler: "func1();" });
     }else{
-        res.redirect('/home');
+        res.status(404);
+        res.send("<h1> 404 File not Found </h1");
     }
 })
+
+app.get("/*",(req,res) =>{
+    res.status(404);
+    res.send("<h1 style='text-align: center;'>404 File not Found </h1");
+})
+
 app.listen(8080, ()=>{
     console.log("Listening on port 8080!!!");
 })

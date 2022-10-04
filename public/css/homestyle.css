@@ -9,3 +9,8 @@
     bottom: 0;
     z-index: -1;
 }
+
+.sp {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
