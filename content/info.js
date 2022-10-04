@@ -9,7 +9,7 @@ let cards = [
       {
         title: "Computex",
         description:
-          "Computex is the coding competition of Addovedi where you solve coding/programming questions on ypur logical and mathematical insights.",
+          "Computex is the coding competition of Addovedi where you solve coding/programming questions on your logical and mathematical insights.",
       },
       {
         title: "FU-Environment",
@@ -34,7 +34,7 @@ let cards = [
     description: "Circuit-Debugging competition, Car-Racing, Arduino Hackathon, Start up idea pitching",
     events: [
       {
-        title: "Circuit-Debugging competition",
+        title: "Circuit-Debugging",
         description:
           "Design an electrical circuit or debug(make correction) the provided electrical circuit.",
       },
@@ -68,7 +68,7 @@ let cards = [
           "Present a speach or powerpoint presentation on new technologies,their advantages,uses,need for society etc ",
       },
       {
-        title: "Circuit-Debugging competition",
+        title: "Circuit-Debugging",
         description:
           "Design an electrical circuit or debug(make correction) the provided electrical circuit.",
       },
@@ -117,10 +117,10 @@ let cards = [
     image: "ceimg.jpg",
     imagebg:"cebg.jpg",
     title: "Civil Engineering",
-    description: "Bridge Construction Competition, Concrete Block Test, Skyscraper, Hydraulic, Highway Constuction Models",
+    description: "Bridge Construction, Concrete Block Test, Skyscraper, Hydraulic, Highway Constuction Models",
     events: [
       {
-        title: "Bridge construction competition",
+        title: "Bridge construction",
         description:
           "Build a bridge model using popsicles and glue to hold weights as much as possible ",
       },
