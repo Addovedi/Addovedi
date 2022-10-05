@@ -28,6 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/css/vertislide.css" />
+    <link rel="stylesheet" href="/css/newslide.css">
     <script src="/js/dephid.js"></script>
     <style>
       img.myimg {
@@ -95,6 +96,35 @@
       #footer-last h6 {
         font-size: 1.5rem;
       }
+      #new{
+    margin-top:10rem;
+}
+      /* media query for department page  */
+      @media screen and (max-width:1000px) {
+        #scene{
+          display: none !important;
+        }
+        #new{
+          display: flex !important;
+        }
+      }
+      @media screen and (min-width:1000px){
+        #new{
+          display: none !important;
+        }
+      }
+      @media screen and (max-width:440px){
+        #new{
+          margin-top: 17rem !important;
+        }
+        #new p{
+          font-size: medium !important;
+        }
+        #new h2{
+          font-size: 1.75rem !important;
+        }
+      }
+      
     </style>
   </head>
   <!-- You can access to department dictionary -->
@@ -105,7 +135,7 @@
   <div id="scene" style="border-radius:2rem; box-shadow: 0 0 20px navajowhite">
     <div class="container">
     <div class="row">
-    <div class="col-md-12 col-sm-12">
+    <div class="col-md-12 col-sm-12" >
     <div id="left-zone">
       <ul class="list" style="margin-top: 7rem;font-family:Noto Sans Mono,Source Sans Pro,serif">
         
@@ -159,6 +189,31 @@
 </div>
 </div>
 
+  <div id="new" >
+    <ul class="nav-dots" id="js-dots">
+      <li class="nav-dot"></li>
+      <li class="nav-dot"></li>
+      <li class="nav-dot"></li>
+      <li class="nav-dot"></li>
+  </ul>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-10 text-center">
+  <main class="main">
+      <%let colo=['first','second','third','fourth','fifth']%>
+      <%let i=0%>
+      <% department.events.forEach(ele=>{%>
+      <section class="section" id="<%=colo[i++]%>" style="font-family:Noto Sans Mono,Source Sans Pro,serif"">
+          <h2 class="section__heading" style="margin: 1.75rem;font-size: 2.5rem;"><%=ele.title%> </h2>
+          <p style="font-size: x-large;padding: 1.25rem;"><%=ele.description%></p>
+      </section>
+      <%})%>
+      
+  </main>
+  </div>
+  </div>
+  </div>
+  </div>
     <%-include('asset/footer')%>
 
     <script
@@ -166,6 +221,7 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/newslide.js"></script>
   </body>
 </html>
 

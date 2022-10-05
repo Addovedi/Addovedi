@@ -14,7 +14,7 @@ let cards = [
       {
         title: "FU-Environment",
         description:
-          "Share your innovative ideas and miniature models on futuristic tech like quantum computing, metaverse-Are we living in simulation?, Human-Computer interaction and information-the basic unit of universe",
+          "Share your ideas and miniature models on topics like quantum computing, metaverse-Are we living in simulation?, Human-Computer interaction and information-the basic unit of universe",
       },
       {
         title: "CSS battle",
