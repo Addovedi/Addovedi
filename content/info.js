@@ -4,7 +4,7 @@ let cards = [
     image: "cseimage2.jpg",
     imagebg: "csebg.jpg",
     title: "Computer Science and Engineering",
-    description: "Computex, Prototype, CSS Battle, Fast typing competition",
+    description: ['Computex', 'Prototype', 'CSS Battle', 'Fast typing competition'],
     events: [
       {
         title: "Computex",
@@ -31,7 +31,7 @@ let cards = [
     image: "ece image.jpg",
     imagebg: "ecebg.jpg",
     title: "Electronics and Communication Engineering",
-    description: "Circuit-Debugging competition, Car-Racing, Arduino Hackathon, Start up idea pitching",
+    description: ['Circuit-Debugging competition', 'Car-Racing', 'Arduino Hackathon', 'Start up idea pitching'],
     events: [
       {
         title: "Circuit-Debugging",
@@ -60,7 +60,7 @@ let cards = [
     image: "ee image.jpg",
     imagebg :"eebg.jpg",
     title: "Electrical Engineering",
-    description: "Tech Talks, Circuit-Debugging competition, Electrical Brainy bunch, EV Exhibition",
+    description: ['Tech Talks', 'Circuit-Debugging competition', 'Electrical Brainy bunch', 'EV Exhibition'],
     events: [
       {
         title: "Tech talk ",
@@ -89,7 +89,7 @@ let cards = [
     image: "me image.jpg",
     imagebg: "mebg.jpg",
     title: "Mechanical Engineering",
-    description: "Hydraulic Arm, Assembly Disassembly, Quiz, Exhibition",
+    description: ['Hydraulic Arm', 'Assembly Disassembly', 'Quiz', 'Exhibition'],
     events: [
       {
         title: "Hydraulic Arm ",
@@ -117,7 +117,7 @@ let cards = [
     image: "ceimg.jpg",
     imagebg:"cebg.jpg",
     title: "Civil Engineering",
-    description: "Bridge Construction, Concrete Block Test, Skyscraper, Hydraulic, Highway Constuction Models",
+    description: ['Bridge Construction', 'Concrete Block Test', 'Skyscraper', 'Hydraulic', 'Highway Constuction Models'],
     events: [
       {
         title: "Bridge construction",
@@ -148,7 +148,7 @@ let cards = [
     image: "common.jpg",
     imagebg: "gamebg.jpg",
     title: "Common Events",
-    description: "Treasure Hunt, Robowar, Gaming Competition",
+    description: ['Treasure Hunt', 'Robowar', 'Gaming Competition'],
     events: [
       {
         title: "Treasure hunt",
