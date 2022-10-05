@@ -14,3 +14,71 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+/* Media Query */
+
+/* @media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+
+@media screen and (max-width: 900px) {
+    /*Big smartphones [426px -> 600px]*/
+    #bancont {
+        margin-top: 5rem;
+    }
+    
+    #banner1 {
+        font-size: 4rem !important;
+    }
+
+    #banner2 {
+        font-size: 3.5rem !important;
+    }
+    
+    .hmimg {
+        width:30rem !important;
+        height:20rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*Big smartphones [426px -> 600px]*/
+    #bancont {
+        margin-top: 5rem;
+    }
+
+    #banner1 {
+        font-size: 2.5rem !important;
+    }
+
+    #banner2 {
+        font-size: 2rem !important;
+    }
+
+    .hmimg {
+        width: 20rem !important;
+        height: 15rem !important;
+    }
+
+}
+
+@media screen and (max-width:765px) {
+    .marcar {
+        margin-left: 7rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+    .marcar {
+        margin-left: 4.5rem !important;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .marcar {
+        margin-left: 2.5rem !important;
+    }
+}
+
+/* @media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
