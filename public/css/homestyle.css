@@ -15,6 +15,21 @@
     margin-bottom: 1.5rem;
 }
 
+.hmimg {
+    width:40rem;
+    height:30rem;
+}
+
+.marcar {
+    width: 18rem; 
+    margin: 2rem 2rem 0 2rem;
+    height: 23.5rem;
+}
+
+img.myimg {
+    width: 17.875rem;
+    height: 18.75rem;
+  }
 /* Media Query */
 
 /* @media only screen and (max-width: 1200px) {
@@ -56,10 +71,17 @@
     }
 
     .hmimg {
-        width: 20rem !important;
-        height: 15rem !important;
+        width: 22rem !important;
+        height: 17rem !important;
     }
 
+}
+
+@media screen and (max-width: 425px) {
+    .hmimg {
+        width: 19rem !important;
+        height: 15rem !important;
+    }
 }
 
 @media screen and (max-width:765px) {
