@@ -74,7 +74,13 @@
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) and (min-width: 420px) {
+    .marcar {
+        margin-left: 3.5rem !important;
+    }
+}
+
+@media screen and (max-width:420px) {
     .marcar {
         margin-left: 2.5rem !important;
     }

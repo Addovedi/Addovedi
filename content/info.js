@@ -14,7 +14,7 @@ let cards = [
       {
         title: "FU-Environment",
         description:
-          "Share your ideas and miniature models on topics like quantum computing, metaverse-Are we living in simulation?, Human-Computer interaction and information-the basic unit of universe",
+          "Share your ideas/models on topics like quantum computing, metaverse-Are we living in simulation?, Human-Computer interaction and information-the basic unit of universe",
       },
       {
         title: "CSS battle",
@@ -22,7 +22,7 @@ let cards = [
       },
       {
         title: "Fast typing competition",
-        description: "The fatser you type, the closer you are to win.",
+        description: "The faster you type, the closer you are to win.",
       },
     ],
   },
