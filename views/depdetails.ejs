@@ -27,6 +27,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/vertislide.css" />
     <link rel="stylesheet" href="/css/newslide.css">
     <script src="/js/dephid.js"></script>
@@ -115,13 +116,13 @@
       }
       @media screen and (max-width:440px){
         #new{
-          margin-top: 17rem !important;
+          margin-top: 8rem !important;
         }
         #new p{
-          font-size: medium !important;
+          font-size: small !important;
         }
         #new h2{
-          font-size: 1.75rem !important;
+          font-size: 1.15rem !important;
         }
       }
       
@@ -191,10 +192,10 @@
 
   <div id="new" >
     <ul class="nav-dots" id="js-dots">
+      <%for(let i=0;i<department.events.length;i++){%> 
       <li class="nav-dot"></li>
-      <li class="nav-dot"></li>
-      <li class="nav-dot"></li>
-      <li class="nav-dot"></li>
+      <%}%> 
+      
   </ul>
   <div class="container">
   <div class="row">
@@ -204,8 +205,8 @@
       <%let i=0%>
       <% department.events.forEach(ele=>{%>
       <section class="section" id="<%=colo[i++]%>" style="font-family:Noto Sans Mono,Source Sans Pro,serif"">
-          <h2 class="section__heading" style="margin: 1.75rem;font-size: 2.5rem;"><%=ele.title%> </h2>
-          <p style="font-size: x-large;padding: 1.25rem;"><%=ele.description%></p>
+          <h2 class="section__heading" id="sechead"><strong><%=ele.title%></strong> </h2>
+          <p id="secp"><%=ele.description%></p>
       </section>
       <%})%>
       
