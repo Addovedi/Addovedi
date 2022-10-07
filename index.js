@@ -23,16 +23,25 @@ app.get("/home/:title", (req,res) => {
         // console.log(department);
         res.render("depdetails",{department,title});
         // var temp = depdetails.render({ clickHandler: "func1();" });
-    }else{
+    }
+    else{
         res.status(404);
         res.send("<h1> 404 File not Found </h1");
     }
+})
+app.get("/brochure",(req,res)=>{
+    res.render("brochure")
+})
+app.get("/timetable",(req,res)=>{
+    res.render("timetable");
 })
 
 app.get("/*",(req,res) =>{
     res.status(404);
     res.send("<h1 style='text-align: center;'>404 File not Found </h1");
 })
+
+
 
 app.listen(process.env.PORT || 8080, ()=>{
     console.log("Listening on port 8080!!!");
